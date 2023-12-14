@@ -2,8 +2,8 @@
 public class Lehrer{
   
   // Anfang Attribute
-  private String namen = "Schlosser";
-  private String namensKuerzel = "SCLO";
+  private String namen;
+  private String namensKuerzel;
   // Ende Attribute
   
   public Lehrer(String namen, String namensKuerzel){
@@ -16,7 +16,7 @@ public class Lehrer{
   }
 
   public void setNamensKuerzel(String namensKuerzelNeu) {
-    namensKuerzel = namensKuerzelNeu;
+    this.namensKuerzel = namensKuerzelNeu;
   }
 
   public String getNamen() {
@@ -24,7 +24,7 @@ public class Lehrer{
   }
 
   public void setNamen(String namenNeu) {
-    namen = namenNeu;
+    this.namen = namenNeu;
   }
 
   // Ende Methoden
