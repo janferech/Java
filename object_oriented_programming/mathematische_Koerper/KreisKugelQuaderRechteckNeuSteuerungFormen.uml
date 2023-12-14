@@ -1,0 +1,75 @@
+﻿[Files]
+File0=D:\oop\mathematische_Koerper\Kreis.java
+File1=D:\oop\mathematische_Koerper\Kugel.java
+File2=D:\oop\mathematische_Koerper\Quader.java
+File3=D:\oop\mathematische_Koerper\RechteckNeu.java
+File4=D:\oop\mathematische_Koerper\SteuerungFormen.java
+
+[Box:  - Kreis]
+X=727
+Y=263
+ShowParameter=4
+ShowIcons=2
+FontSize=11
+FontName=Segoe UI
+
+[Box:  - Kugel]
+X=482
+Y=263
+ShowParameter=4
+ShowIcons=2
+FontSize=11
+FontName=Segoe UI
+
+[Box:  - Quader]
+X=20
+Y=263
+ShowParameter=4
+ShowIcons=2
+FontSize=11
+FontName=Segoe UI
+
+[Box:  - RechteckNeu]
+X=265
+Y=263
+ShowParameter=4
+ShowIcons=2
+FontSize=11
+FontName=Segoe UI
+
+[Box:  - SteuerungFormen]
+X=396
+Y=40
+ShowParameter=4
+ShowIcons=2
+FontSize=11
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=11
+ShowObjectDiagram=0
+
+[Connections]
+V0=SteuerungFormen#RechteckNeu#AssociationDirected####0#0#0###0#0
+V1=SteuerungFormen#Quader#AssociationDirected####0#0#0###0#0
+V2=SteuerungFormen#Kreis#AssociationDirected####0#0#0###0#0
+V3=SteuerungFormen#Kugel#AssociationDirected####0#0#0###0#0
+
+[Interactive]
+I0=
+
+[Window]
+Left=156
+Top=156
+Width=1180
+Height=365
+
