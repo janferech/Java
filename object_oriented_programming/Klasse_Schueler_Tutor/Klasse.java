@@ -8,18 +8,19 @@ public class Klasse {
 
 
   // Anfang Attribute
-  private String name = "BG12-DV";
-  ArrayList<Schueler> meineSchueler;
+  private String name;
+  private ArrayList<Schueler> meineSchueler;
   private Lehrer meinTutor;
   // Ende Attribute
 
   public Klasse(){
-    meineSchueler = new ArrayList<Schueler>(); 
+    meineSchueler = new ArrayList<Schueler>();
+    this.meinTutor = new Lehrer(); 
   }
   // Anfang Methoden
   
-  public String getName(){
-    return this.name;
+  public String getName() {
+    return name;
   }
 
   public void setName(String name){
@@ -34,7 +35,7 @@ public class Klasse {
     return this.meineSchueler;
   }
   public void neuenLehrerAnlegen(String name, String namensKuerzel){
-    this.meinTutor = new Lehrer(name, namensKuerzel);
+    //this.meinTutor = new Lehrer(name, namensKuerzel);
     }
   
   public void neuerSchuelerHinzufuegen(String name){
@@ -43,14 +44,28 @@ public class Klasse {
 
     } // end of for
 
-  public void ausgabeKlassenListe(){
+  public String ausgabeSchuelerNamen(){
+    String ausgabe = "";
     
-    
-    for (Schueler tempS : meineSchueler) {
-      System.out.println("\t" + tempS.getName());
+    int i =0;
+    for (Schueler tempSchueler : meineSchueler) {
+      i++;
+      ausgabe += ("\t" + i + ". " + tempSchueler.getName() + "\n");
     } // end of for
     
+    return ausgabe;
   }
+  public String ausgabeSchuelerMitKursen(){
+    String ausgabe = "";
+    
+    int i = 0;
+    for (Schueler tempSchueler: meineSchueler) {
+      i++;
+      ausgabe += ("\t" + i + ". " + tempSchueler.getMeineKurse().toString());
+    } // end of for
+    return ausgabe;
+  }
+  
   public void setMeinTutor(Lehrer meinTutorNeu) {
     this.meinTutor = meinTutorNeu;
   }
@@ -58,7 +73,6 @@ public class Klasse {
   public Lehrer getMeinTutor() {
     return meinTutor;
   }
-
   // Ende Methoden
 
   }
