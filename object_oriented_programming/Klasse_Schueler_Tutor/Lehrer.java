@@ -2,13 +2,12 @@
 public class Lehrer{
   
   // Anfang Attribute
-  private String namen;
+  private String name;
   private String namensKuerzel;
   // Ende Attribute
   
-  public Lehrer(String namen, String namensKuerzel){
-    this.namen = namen;
-    this.namensKuerzel = namensKuerzel;
+  public Lehrer(){
+    
     }
   
   public String getNamensKuerzel() {
@@ -19,14 +18,18 @@ public class Lehrer{
     this.namensKuerzel = namensKuerzelNeu;
   }
 
-  public String getNamen() {
-    return this.namen;
+  public String getName() {
+    return this.name;
   }
 
-  public void setNamen(String namenNeu) {
-    this.namen = namenNeu;
+  public void setName(String nameNeu) {
+    this.name = nameNeu;
   }
-
+  @Override   //Ánnotation = Metadaten im Quelltext -->Technischer Begriff zum Ueberschreiben
+  public String toString(){
+    return this.name + "(" + this.namensKuerzel + ")";
+    } 
+    
   // Ende Methoden
   }
 
