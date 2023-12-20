@@ -1,3 +1,10 @@
+/**
+ *
+ * Beschreibung
+ *
+ * @version 1.0 vom 20.12.2023
+ * @author Janferech
+ */
 public class Kunde {
     private static int kundenstammNr = 1000;
     private int kundenNr;

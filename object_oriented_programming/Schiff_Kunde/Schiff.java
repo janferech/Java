@@ -2,10 +2,9 @@
  *
  * Beschreibung
  *
- * @version 1.0 vom 03.11.2023
- * @author Kurwix
+ * @version 1.0 vom 20.12.2023
+ * @author Janferech
  */
-
 public class Schiff {
   
   // Anfang Attribute 
