@@ -1,0 +1,79 @@
+﻿[Files]
+File0=E:\oop\Klasse_Schueler_Tutor\Klasse.java
+File1=E:\oop\Klasse_Schueler_Tutor\Kurs.java
+File2=E:\oop\Klasse_Schueler_Tutor\Lehrer.java
+File3=E:\oop\Klasse_Schueler_Tutor\Schueler.java
+File4=E:\oop\Klasse_Schueler_Tutor\Verwaltung.java
+
+[Box:  - Klasse]
+X=247
+Y=4
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=10
+FontName=Segoe UI
+
+[Box:  - Kurs]
+X=844
+Y=405
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=10
+FontName=Segoe UI
+
+[Box:  - Lehrer]
+X=275
+Y=359
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=10
+FontName=Segoe UI
+
+[Box:  - Schueler]
+X=819
+Y=10
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=10
+FontName=Segoe UI
+
+[Box:  - Verwaltung]
+X=0
+Y=73
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=10
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=10
+ShowObjectDiagram=0
+
+[Connections]
+V0=Klasse#Schueler#Aggregation####0#0#0###0#0
+V1=Klasse#Lehrer#AssociationDirected####0#0#0###0#0
+V2=Schueler#Kurs#Aggregation####0#0#0###0#0
+V3=Verwaltung#Klasse#AssociationDirected####0#0#0###0#0
+
+[Interactive]
+I0=
+
