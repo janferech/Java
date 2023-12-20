@@ -25,8 +25,8 @@ public class Lehrer{
   public void setName(String nameNeu) {
     this.name = nameNeu;
   }
-  @Override   //Ánnotation = Metadaten im Quelltext -->Technischer Begriff zum Ueberschreiben
-  public String toString(){
+  @Override   //Annotation = Metadaten im Quelltext -->Technischer Begriff zum Ueberschreiben
+  public String toString(){ //toString() Objects Methode zum ausgeben eines Objekts
     return this.name + "(" + this.namensKuerzel + ")";
     } 
     

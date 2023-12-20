@@ -14,7 +14,7 @@ public class Klasse {
   // Ende Attribute
 
   public Klasse(){
-    meineSchueler = new ArrayList<Schueler>();
+    this.meineSchueler = new ArrayList<Schueler>();
     this.meinTutor = new Lehrer(); 
   }
   // Anfang Methoden
@@ -59,9 +59,9 @@ public class Klasse {
     String ausgabe = "";
     
     int i = 0;
-    for (Schueler tempSchueler: meineSchueler) {
+    for (Schueler tempSchueler: this.meineSchueler) {
       i++;
-      ausgabe += ("\t" + i + ". " + tempSchueler.getMeineKurse().toString());
+      ausgabe += ("\t" + i + ". " + tempSchueler.toString() + tempSchueler.ausgabeKurse());
     } // end of for
     return ausgabe;
   }

@@ -13,8 +13,7 @@ public class Verwaltung {
     this.meineKlasse = new Klasse();
       
   }
-  
-  
+    
   public void eingabe(){
     //keine Eingaben, sondern nur die Namen "Max Muster", "Friedrich-List", "Tim Tester", "Birgit Beispiel" einzeln an die Methode neuerSchuelerHinzufuegen der Klasse "Klasse" uebergeben
     this.meineKlasse.setName("BG12-DV");
@@ -42,7 +41,11 @@ public class Verwaltung {
     System.out.println("\n\tAlle Schueler der Klasse: ");
     System.out.println(this.meineKlasse.ausgabeSchuelerNamen());
     
-    System.out.println(this.meineKlasse.getMeineSchueler().toString() + "\n");
+    System.out.println("\n\n\n\n\t*****************************************");
+    System.out.println("\t                  Alle Schueler und Ihre Kurse");
+    System.out.println("\t*****************************************");
+    System.out.println(this.meineKlasse.ausgabeSchuelerMitKursen());
+    
   }  
   
   public void automatischeEingabe(){
@@ -68,6 +71,7 @@ public class Verwaltung {
   
       meineKlasse.getMeineSchueler().get(2).neuenKursHinzufuegen("GK IT: Betriebssysteme", 3);
     }
+  
   public static void main(String [] args)   {
     Verwaltung vw = new Verwaltung();
     vw.automatischeEingabe();

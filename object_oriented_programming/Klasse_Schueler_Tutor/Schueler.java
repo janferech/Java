@@ -9,15 +9,15 @@ public class Schueler {
   // Anfang Attribute
   private int schuelerNummer;
   private String name;
-  private int schuelerstammNummer = 1000;
+  private static int schuelerstammNummer = 1000;
   private ArrayList<Kurs> meineKurse;
   // Ende Attribute
 
   public Schueler(String name){
     this.name = name;
     this.meineKurse = new ArrayList<Kurs>();
-    this.schuelerNummer = schuelerstammNummer;
-    this.schuelerNummer++;
+    this.schuelerNummer = this.schuelerstammNummer;
+    this.schuelerstammNummer++;
   }
   
   // Anfang Methoden
@@ -28,11 +28,10 @@ public class Schueler {
   
   public String ausgabeKurse(){
     String ausgabe = "";
-    int i = 1;
     
     for (Kurs tempK : meineKurse) {
-      ausgabe += ("\t" + i + tempK + "\n");
-      i++;
+      ausgabe += ("\t" + tempK.toString());
+      
     } // end of for
     
     return ausgabe;  
@@ -62,8 +61,7 @@ public class Schueler {
   
   @Override
   public String toString(){
-    return ("\t" + this.name + " (Schuelernummer: " + this.schuelerNummer + ")\n" + 
-           this.meineKurse.toString() + "\n");
+    return ("\t" + this.name + " (Schuelernummer: " + this.schuelerNummer + ")\n");
     }                                                                               
   // Ende Methoden
 }
